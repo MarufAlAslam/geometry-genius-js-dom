@@ -92,10 +92,10 @@
                                                 <img src="img/rect.png" class="img-fluid shape mb-4" alt="">
 
                                                 <h3 class="shape-title fw-bold">
-                                                    Triangle
+                                                    Rectangle
                                                 </h3>
                                                 <p class="formula">
-                                                    Area (A) = 0.5 x b x h
+                                                    Area (A) = w x l
                                                 </p>
                                             </div>
 
@@ -103,12 +103,12 @@
                                                 <div class="input-group align-items-center justify-content-between">
                                                     <input type="text"
                                                         class="form-control bg-light me-2 border-0 rounded"
-                                                        placeholder="b" name="" id="">
+                                                        placeholder="w" name="" id="">
 
                                                     <span>cm</span>
                                                     <input type="text"
                                                         class="form-control bg-light mx-2 border-0 rounded"
-                                                        placeholder="h" name="" id="">
+                                                        placeholder="l" name="" id="">
 
                                                     <span>cm</span>
                                                 </div>
@@ -127,10 +127,10 @@
                                                 <img src="img/para.png" class="img-fluid shape mb-4" alt="">
 
                                                 <h3 class="shape-title fw-bold">
-                                                    Triangle
+                                                    Parallelogram
                                                 </h3>
                                                 <p class="formula">
-                                                    Area (A) = 0.5 x b x h
+                                                    Area (A) = b x h
                                                 </p>
                                             </div>
 
@@ -162,10 +162,10 @@
                                                 <img src="img/romb.png" class="img-fluid shape mb-4" alt="">
 
                                                 <h3 class="shape-title fw-bold">
-                                                    Triangle
+                                                    Rhombus
                                                 </h3>
                                                 <p class="formula">
-                                                    Area (A) = 0.5 x b x h
+                                                    Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub>
                                                 </p>
                                             </div>
 
@@ -173,12 +173,12 @@
                                                 <div class="input-group align-items-center justify-content-between">
                                                     <input type="text"
                                                         class="form-control bg-light me-2 border-0 rounded"
-                                                        placeholder="b" name="" id="">
+                                                        placeholder="d1" name="" id="">
 
                                                     <span>cm</span>
                                                     <input type="text"
                                                         class="form-control bg-light mx-2 border-0 rounded"
-                                                        placeholder="h" name="" id="">
+                                                        placeholder="d2" name="" id="">
 
                                                     <span>cm</span>
                                                 </div>
@@ -197,10 +197,10 @@
                                                 <img src="img/pent.png" class="img-fluid shape mb-4" alt="">
 
                                                 <h3 class="shape-title fw-bold">
-                                                    Triangle
+                                                    Pentagon
                                                 </h3>
                                                 <p class="formula">
-                                                    Area (A) = 0.5 x b x h
+                                                    Area (A) = 0.5 x p x b
                                                 </p>
                                             </div>
 
@@ -208,12 +208,12 @@
                                                 <div class="input-group align-items-center justify-content-between">
                                                     <input type="text"
                                                         class="form-control bg-light me-2 border-0 rounded"
-                                                        placeholder="b" name="" id="">
+                                                        placeholder="p" name="" id="">
 
                                                     <span>cm</span>
                                                     <input type="text"
                                                         class="form-control bg-light mx-2 border-0 rounded"
-                                                        placeholder="h" name="" id="">
+                                                        placeholder="b" name="" id="">
 
                                                     <span>cm</span>
                                                 </div>
@@ -232,10 +232,10 @@
                                                 <img src="img/ellipse.png" class="img-fluid shape mb-4" alt="">
 
                                                 <h3 class="shape-title fw-bold">
-                                                    Triangle
+                                                    Ellipse
                                                 </h3>
                                                 <p class="formula">
-                                                    Area (A) = 0.5 x b x h
+                                                    Area (A) = 兀ab
                                                 </p>
                                             </div>
 
@@ -243,12 +243,12 @@
                                                 <div class="input-group align-items-center justify-content-between">
                                                     <input type="text"
                                                         class="form-control bg-light me-2 border-0 rounded"
-                                                        placeholder="b" name="" id="">
+                                                        placeholder="a" name="" id="">
 
                                                     <span>cm</span>
                                                     <input type="text"
                                                         class="form-control bg-light mx-2 border-0 rounded"
-                                                        placeholder="h" name="" id="">
+                                                        placeholder="b" name="" id="">
 
                                                     <span>cm</span>
                                                 </div>
@@ -263,8 +263,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="result" id="result"></div>
+                    <div class="col-lg-3 p-3">
+                        <div class="result" id="result">
+                            <div class="card calculation-card">
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <h4 class="fw-bold fs-20 text-decoration-underline">
+                                            Area Calculation
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

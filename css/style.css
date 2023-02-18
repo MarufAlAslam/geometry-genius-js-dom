@@ -19,7 +19,8 @@ header {
     background-color: rgb(16, 144, 216, 0.1);
 }
 
-header h2 {
+header h2,
+.result h4 {
     color: rgb(18, 18, 18, .8);
 }
 
@@ -39,4 +40,9 @@ header h2 {
 
 ::placeholder {
     color: #414141;
+}
+
+/* calculation */
+.calculation-card {
+    min-height: 300px;
 }
