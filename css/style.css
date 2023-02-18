@@ -42,6 +42,11 @@ header h2,
     color: #414141;
 }
 
+.cards-holder .card {
+    cursor: pointer;
+    transition: 0.4s;
+}
+
 /* calculation */
 .calculation-card {
     min-height: 300px;

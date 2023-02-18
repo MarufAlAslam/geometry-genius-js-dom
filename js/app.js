@@ -11,6 +11,14 @@ const para_h = document.getElementById('para-h');
 const rhombus_d1 = document.getElementById('rhombus-d1');
 const rhombus_d2 = document.getElementById('rhombus-d2');
 
+const pentagon_p = document.getElementById('pentagon-p');
+const pentagon_b = document.getElementById('pentagon-b');
+
+const ellipse_a = document.getElementById('ellipse-a');
+const ellipse_b = document.getElementById('ellipse-b');
+
+const cards = document.querySelectorAll('.cards-holder .card');
+
 
 const resultHolder = document.getElementById('result-holder');
 
@@ -38,6 +46,16 @@ function createLi(name, value) {
     `;
     return li;
 }
+
+// random background color and set it to card on mouse over
+// set the color opacity to 0.5
+cards.forEach(card => {
+    card.addEventListener('mouseover', function () {
+        const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        card.style.backgroundColor = `#${randomColor}50`;
+    });
+});
+
 
 // area of triangle
 function triangle() {
@@ -92,6 +110,35 @@ function rhombus() {
         rhombusArea = multiply(d1, d2) / 2;
         console.log(rhombusArea);
         resultHolder.appendChild(createLi("Rhombus", rhombusArea));
+    } else {
+        alert('Please enter valid values');
+    }
+}
+
+// area of pentagon
+function pentagon() {
+    // validation
+    if (pentagon_p.value !== '' && pentagon_b.value !== '' && pentagon_p.value > 0 && pentagon_b.value > 0) {
+        const p = parseFloat(pentagon_p.value);
+        const b = parseFloat(pentagon_b.value);
+        pentagonArea = multiply(p, b) / 2;
+        console.log(pentagonArea);
+        resultHolder.appendChild(createLi("Pentagon", pentagonArea));
+    } else {
+        alert('Please enter valid values');
+    }
+}
+
+// area of ellipse
+function ellipse() {
+    // validation
+    if (ellipse_a.value !== '' && ellipse_b.value !== '' && ellipse_a.value > 0 && ellipse_b.value > 0) {
+        const a = parseFloat(ellipse_a.value);
+        const b = parseFloat(ellipse_b.value);
+        const Pi = 3.14
+        ellipseArea = multiply(a, b) * Pi;
+        console.log(ellipseArea);
+        resultHolder.appendChild(createLi("Ellipse", ellipseArea));
     } else {
         alert('Please enter valid values');
     }
