@@ -35,17 +35,43 @@ let triangleArea = 0;
 function multiply(a, b) {
     return a * b;
 }
+
+// console log clicked button's inner html
+function toMeter(e) {
+    let value = parseFloat(e.parentNode.childNodes[3].childNodes[0].innerHTML);
+    value = value / 10000;
+    const area = e.parentNode.childNodes[3].childNodes[0];
+    area.innerHTML = value;
+}
+
+// delete selected item
+function deleteItem() {
+    const li = document.querySelectorAll('li');
+    li.forEach(item => {
+        item.addEventListener('click', function () {
+            item.remove();
+        });
+    });
+}
+
+
+
+
+
 function createLi(name, value) {
     const li = document.createElement('li');
     li.innerHTML = `
         <div class="d-flex justify-content-between align-items-center py-2">
         <span>${name}</span>
-        <span><span>${value.toFixed(2)}</span>cm<sup>2</sup></span>
-        <button class="btn btn-primary btn-sm">Convert to m<sup>2</sup></button>
+        <span id="res"><span id="area">${value.toFixed(2)}</span>cm<sup>2</sup></span>
+        <button onclick="toMeter(this)" class="btn btn-primary btn-sm">to m<sup>2</sup></button>
+        <button class="btn btn-danger btn-sm" onclick="deleteItem()">x</button>
         </div>
     `;
     return li;
 }
+
+
 
 // random background color and set it to card on mouse over
 // set the color opacity to 0.5
@@ -64,7 +90,7 @@ function triangle() {
         const b = parseFloat(triangle_b.value);
         const h = parseFloat(triangle_h.value);
         triangleArea = multiply(b, h) / 2;
-        console.log(triangleArea);
+        // console.log(triangleArea);
         resultHolder.appendChild(createLi("Triangle", triangleArea));
     } else {
         alert('Please enter valid values');
@@ -79,7 +105,7 @@ function rectangle() {
         const w = parseFloat(rectangle_w.value);
         const l = parseFloat(rectangle_l.value);
         rectangleArea = multiply(w, l);
-        console.log(rectangleArea);
+        // console.log(rectangleArea);
         resultHolder.appendChild(createLi("Rectangle", rectangleArea));
     } else {
         alert('Please enter valid values');
@@ -94,7 +120,7 @@ function parallelogram() {
         const b = parseFloat(para_b.value);
         const h = parseFloat(para_h.value);
         paraArea = multiply(b, h);
-        console.log(paraArea);
+        // console.log(paraArea);
         resultHolder.appendChild(createLi("Parallelogram", paraArea));
     } else {
         alert('Please enter valid values');
@@ -108,7 +134,7 @@ function rhombus() {
         const d1 = parseFloat(rhombus_d1.value);
         const d2 = parseFloat(rhombus_d2.value);
         rhombusArea = multiply(d1, d2) / 2;
-        console.log(rhombusArea);
+        // console.log(rhombusArea);
         resultHolder.appendChild(createLi("Rhombus", rhombusArea));
     } else {
         alert('Please enter valid values');
@@ -122,7 +148,7 @@ function pentagon() {
         const p = parseFloat(pentagon_p.value);
         const b = parseFloat(pentagon_b.value);
         pentagonArea = multiply(p, b) / 2;
-        console.log(pentagonArea);
+        // console.log(pentagonArea);
         resultHolder.appendChild(createLi("Pentagon", pentagonArea));
     } else {
         alert('Please enter valid values');
@@ -137,7 +163,7 @@ function ellipse() {
         const b = parseFloat(ellipse_b.value);
         const Pi = 3.14
         ellipseArea = multiply(a, b) * Pi;
-        console.log(ellipseArea);
+        // console.log(ellipseArea);
         resultHolder.appendChild(createLi("Ellipse", ellipseArea));
     } else {
         alert('Please enter valid values');
