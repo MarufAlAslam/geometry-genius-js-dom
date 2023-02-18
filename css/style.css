@@ -63,3 +63,12 @@ li button {
 ol {
     padding-left: 10px;
 }
+
+
+
+
+/* blogs */
+/* light blue and skyblue linear background with 30% background opacity */
+.linear {
+    background: linear-gradient(90deg, rgba(16, 144, 216, 0.3), rgba(0, 255, 255, 0.3));
+}

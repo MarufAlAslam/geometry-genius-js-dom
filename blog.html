@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Geometry Genius</title>
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="linear p-4">
+
+        <!-- HEADER STARTS HERE -->
+        <div class="container-fluid">
+            <header class="py-3 px-4 rounded-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="logo">
+                        <h2 class="fw-bold fs-45 mb-0">
+                            Interactive
+                        </h2>
+                        <p class="mb-0 fs-20 text-muted">Geometry Genius</p>
+                    </div>
+                    <div class="action">
+                        <a href="index.html" class="btn btn-primary px-4">
+                            Home
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- HEADER ENDS HERE -->
+
+        <!-- BLOGS -->
+        <section class="container blogs mt-5">
+            <!--
+                ১) What is DOM and what is the purpose of DOM?
+                ২) How will you select HTML elements using DOM? Name the DOM methods.
+                ৩) What is event bubble?
+                ৪) What is a callback function and why will you use it? 
+            -->
+
+            <div class="text-center">
+                <h2 class="fw-bold">BLOGS</h2>
+                <hr>
+            </div>
+
+            <div class="blog-item card p-4 mb-4">
+                <h3 class="question">
+                    What is DOM and what is the purpose of DOM?
+                </h3>
+                <p class="ans mt-3">
+                    DOM stands for Document Object Model. It is a programming interface for HTML and XML documents. It
+                    represents the page so that programs can change the document structure, style, and content. The DOM
+                    represents the document as nodes and objects. That way, programming languages can connect to the
+                    page.
+                </p>
+            </div>
+            <div class="blog-item card p-4 mb-4">
+                <h3 class="question">
+                    How will you select HTML elements using DOM? Name the DOM methods.
+                </h3>
+                <p class="ans mt-3">
+                    There are two ways to select HTML elements using DOM. One is by using the getElementById() method
+                    and the other is by using the querySelector() method. The getElementById() method is used to select
+                    an element by its id attribute. The querySelector() method is used to select an element by its
+                    CSS selector.
+                </p>
+            </div>
+
+            <div class="blog-item card p-4 mb-4">
+                <h3 class="question">
+                    What is event bubble?
+                </h3>
+                <p class="ans mt-3">
+                    Event bubbling is a way of event propagation in the HTML DOM API, when an event occurs in an
+                    element inside another element, and both elements have registered a handle for that event. The
+                    event handler is first triggered on the innermost element and then propagated to outer elements.
+                </p>
+            </div>
+
+            <div class="blog-item card p-4 mb-4">
+                <h3 class="question">
+                    What is a callback function and why will you use it?
+                </h3>
+                <p class="ans mt-3">
+                    A callback function is a function passed into another function as an argument, which is then
+                    invoked inside the outer function to complete some kind of routine or action. Callback functions
+                    are used to make sure that a function is “not going to execute until another function has
+                    finished executing.”
+                </p>
+            </div>
+        </section>
+        <!-- BLOGS -->
+
+    </main>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
