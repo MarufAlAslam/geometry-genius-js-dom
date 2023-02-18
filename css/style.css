@@ -18,3 +18,25 @@
 header {
     background-color: rgb(16, 144, 216, 0.1);
 }
+
+header h2 {
+    color: rgb(18, 18, 18, .8);
+}
+
+/* cards */
+.shape {
+    height: 100px;
+}
+
+.shape-title {
+    font-size: 25px;
+    color: #414141;
+}
+
+.form-control {
+    background-color: #f1f1f1 !important;
+}
+
+::placeholder {
+    color: #414141;
+}
