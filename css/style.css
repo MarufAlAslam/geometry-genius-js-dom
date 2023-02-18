@@ -46,3 +46,15 @@ header h2,
 .calculation-card {
     min-height: 300px;
 }
+
+li {
+    font-size: 14px;
+}
+
+li button {
+    font-size: 13px;
+}
+
+ol {
+    padding-left: 10px;
+}
