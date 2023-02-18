@@ -1,0 +1,20 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.fs-45 {
+    font-size: 40px;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+/* header */
+header {
+    background-color: rgb(16, 144, 216, 0.1);
+}
